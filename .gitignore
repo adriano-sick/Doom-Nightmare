@@ -6359,3 +6359,7 @@
 /Assets/Material.meta
 *.csproj
 *.sln
+/Assets/Modern Weapons
+/Assets/Particles
+/Assets/Sounds
+*.meta
