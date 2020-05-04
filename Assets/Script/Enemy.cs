@@ -58,7 +58,7 @@ public class Enemy : MonoBehaviour
                 float random = Random.Range(0.0f, 1.0f);
                 if (random > (1.0f - attackProbability) && dist < attackDistance)
                 {
-                    shoot = true;
+                    ShootEvent();
 
                 }
             }
@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour
                 meshNav.SetDestination(player.transform.position);
                 enemyAnim.Run();
 
-                enemySound.PlayOneShot(followSound);
+                enemySound.PlayOneShot(followSound, 1f);
             }
 
             
